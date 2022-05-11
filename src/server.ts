@@ -3,6 +3,7 @@ import config from '../config/default';
 import morgan from "morgan";
 import cors from "cors";
 import Logger from '../core/Logger';
+import { deserializeUser } from './middlewares/deserializeUser';
 
 process.on("uncaughtException", (e) => {
   Logger.error(e);
@@ -35,7 +36,6 @@ app.use(
 
 
 app.use(express.json())
-// ROUTES
-app.get('/', (_, res) => res.send("<h1>Server Running Perfectly 🚀</h1>"));
+app.use(deserializeUser);
 
 export default app;
