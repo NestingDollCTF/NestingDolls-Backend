@@ -1,9 +1,9 @@
 {
-    "name": "portfolio-backend",
+    "name": "nestingdoll-backend",
     "version": "1.0.0",
-    "description": "This is a backend for my personal portfolio",
+    "description": "This is a backend for NestingDoll website",
     "main": "index.ts",
-    "repository": "https://github.com/Arun89-crypto/portfolio-backend.git",
+    "repository": "https://github.com/NestingDollCTF/NestingDolls-Backend",
     "author": "Arun Jangra <arunjngra89@gmail.com>",
     "license": "MIT",
     "scripts": {
